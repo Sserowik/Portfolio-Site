@@ -8,6 +8,12 @@ Link Color-Hover (Pesto): #897b34:
 Fonts Used
 Primary Font : Lexend
 */
+header {
+  background-color: #5e3454;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px solid #4a4a4a;
+}
 body {
     background-color:#d9b0cf;
     font-family:'Lexend', sans-serif;
@@ -85,4 +91,11 @@ img {
   .button.contact:hover {
     background-color: #5e3454;
     color: #ffffff !important;
+  }
+  /*Layout Styling*/
+  .container {
+    padding: 0 15px;
+  }
+  #projects .row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
   }
