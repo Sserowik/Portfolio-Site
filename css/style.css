@@ -43,7 +43,6 @@ body {
   main {
     padding-top: 170px;
   }
-  
   h1, h2, h3, h4 {
       line-height: 1.4;
     }
@@ -60,11 +59,11 @@ body {
     h3 {
       font-size: 1.75em;
       font-weight: 400;
+      margin-top: 0;
     }
     h4 {
       font-size: 1.35em;
       font-weight: 400;
-      text-align: center;
     }
   img {
       width: 100%;
@@ -125,15 +124,15 @@ body {
       border-bottom: 3px solid #4a4a4a;
       padding: 25px;
     }
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-    #hero h1 {
+    
+    #hero {
       text-align: center; /* Centers text */
     }
-    h3 {
+    #projects h2 {
+      text-align: center;
+      padding: 10px;
+    }
+    #centerbutton {
       text-align: center;
     }
     .logo {
@@ -152,17 +151,24 @@ body {
       width: 100%;
       border-bottom: 3px solid #4a4a4a;
     }
-[class*="col-"] {
-  float: left;
-  padding: 10px;
-  box-sizing: border-box;
+  [class*="col-"] {
+    padding: 15px;
+    box-sizing: border-box;
+    float: left;
   } 
+  .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
 footer {
       background-color: #fff3b9;
       margin: 0;
       padding: 20px;
       border-top: 3px solid #4a4a4a;
       text-align: center;
+      content: "";
+      clear: both;
     }
 
   /* Media Queries */
