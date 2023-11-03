@@ -69,29 +69,9 @@ body {
   img {
       width: 100%;
     } 
-    /* Links*/
-    a {
-      color: #db3218;
-      text-decoration: none; /* No underlining */
-    }
-    a:visited { /* visited link */
-      color: #db3218;
-    }
-    a:hover {
-      color: #897b34;
-      text-decoration: underline; /* Underlining when hovering over a link */
-    } 
-    a:hover,
-    a:focus {
-      color: #897b34;
-      text-decoration: underline;
-    }
-    a:active { /* selected link */
-      color: #581b04;
-    }
   /*Buttons*/
     .button {
-      display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+      display: inline-block;
       background-color: #5e3454;
       color: #ffffff !important; /* needed to override the default link color */
       font-weight: 400;
@@ -114,7 +94,27 @@ body {
       background-color: #5e3454;
       color: #ffffff !important;
     }
-    /*Layout Styling*/
+  /* Links*/
+    a {
+      color: #db3218;
+      text-decoration: none; /* No underlining */
+    }
+    a:visited { /* visited link */
+      color: #db3218;
+    }
+    a:hover {
+      color: #897b34;
+      text-decoration: underline; /* Underlining when hovering over a link */
+    } 
+    a:hover,
+    a:focus {
+      color: #897b34;
+      text-decoration: underline;
+    }
+    a:active { /* selected link */
+      color: #581b04;
+    }
+/*Layout Styling*/
     .container {
       padding: 0 15px;
     }
@@ -145,12 +145,12 @@ body {
       padding: 20px 0;
       display: inline-block;
       width: 100%;
-      border: 3px solid #4a4a4a;
+      border-bottom: 3px solid #4a4a4a;
     }
 footer {
-  background-color: #fff3b9;
-  margin: 0;
-  padding: 20px;
-  border-top: 3px solid #4a4a4a;
-  text-align: center;
+      background-color: #fff3b9;
+      margin: 0;
+      padding: 20px;
+      border-top: 3px solid #4a4a4a;
+      text-align: center;
     }
