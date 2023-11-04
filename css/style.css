@@ -54,6 +54,7 @@ body {
     h2 {
       font-size: 2.25em;
       font-weight: 900;
+      text-align: center;
     }
     
     h3 {
@@ -68,6 +69,32 @@ body {
   img {
       width: 100%;
     } 
+  .berlin-illustration {
+    width: 100%;
+    max-width: 100%;
+    height: auto; 
+  }
+  @keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+  }
+  .sun {
+    animation: 4s color-change infinite alternate linear;
+  }
+  @keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+  .cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+  }
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
   /*Buttons*/
     .button {
       display: inline-block;
@@ -129,10 +156,6 @@ body {
     #hero {
       text-align: center; /* Centers text */
     }
-    #projects {
-      text-align: center;
-      padding: 10px;
-    }
     #centerbutton {
       text-align: center;
     }
@@ -153,17 +176,7 @@ body {
       border-bottom: 3px solid #4a4a4a;
     }
 
-  [class*="col-"] {
-    padding: 15px;
-    box-sizing: border-box;
-    float: left;
-  } 
 
-  .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
 
 footer {
       background-color: #fff3b9;
@@ -182,7 +195,7 @@ footer {
 Medium devices (640px and larger)
 ================================= */
 
-  @media screen and (min-width: 640px) {
+  @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -199,6 +212,17 @@ Medium devices (640px and larger)
   .col-md-6 {
     width: 50%;
   }
+  [class*="col-"] {
+    padding: 15px;
+    box-sizing: border-box;
+    float: left;
+  } 
+
+  .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
   .container {
     max-width: 1200px;
     margin-left: auto;
@@ -209,7 +233,7 @@ Medium devices (640px and larger)
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
