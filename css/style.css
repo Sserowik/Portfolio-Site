@@ -11,8 +11,7 @@ Primary Font : Lexend
 */
 header {
     background-color: #fff3b9;
-    text-align: center;
-    padding: 10px 0;
+    padding: 10px 0 4px;
     border-bottom: 3px solid #4a4a4a;
     position:fixed;
     width: 100%;
@@ -20,17 +19,38 @@ header {
   nav > ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
    }
-  nav > ul> li {
-    display: inline-block;
-  }
   nav > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #4a4a4a;
+  } 
+
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }  
+
+  .navtoggle.responsive li  {
+    display: block;
+    text-align: right;
+    padding: 10px;
+    border-top: 1px solid rgba(255,127,80,0.5);
   }
   
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+  }
+
+   .navtoggle li .icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 30px;
+    padding-right: 10px;
+  }
+
 body {
       background-color:#d9b0cf;
       font-family:'Lexend', sans-serif;
@@ -41,7 +61,7 @@ body {
   }
  
   main {
-    padding-top: 170px;
+    padding-top: 56px;
   }
   h1, h2, h3, h4 {
       line-height: 1.4;
@@ -160,7 +180,7 @@ body {
       text-align: center;
     }
     .logo {
-      max-width: 250px;
+      max-width: 150px;
     }
     .projectcard {
       max-width: 600px;
@@ -175,9 +195,9 @@ body {
       width: 100%;
       border-bottom: 3px solid #4a4a4a;
     }
-
-
-
+.webcons {
+  margin-top: 10px;
+}
 footer {
       background-color: #fff3b9;
       margin: 0;
@@ -200,12 +220,26 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
     }
-
+  nav > ul> li {
+      display: inline-block;
+    }
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
     }
+  nav > ul {
+      margin: 1em 0;
+    }
+  .navtoggle li:not(:last-child) {
+      display: inline-block;
+      border: none;
+      padding: 0px;
+    }
+  .navtoggle li:last-child {
+      display: none;
+    }
+
   main {
     padding-top: 99px;
   }
@@ -217,7 +251,9 @@ Medium devices (640px and larger)
     box-sizing: border-box;
     float: left;
   } 
-
+  .logo {
+    max-width: 250px;
+  }
   .row::after {
       content: "";
       clear: both;
