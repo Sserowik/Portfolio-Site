@@ -75,6 +75,7 @@ body {
       font-size: 2.25em;
       font-weight: 900;
       text-align: center;
+      padding-top: 10px;
     }
     
     h3 {
@@ -165,7 +166,7 @@ body {
     .container {
       padding: 0 15px;
     }
-    #projects .row {
+    .projects .row {
       margin: 25px 0; /* 25px top and bottom, 0 left and right */
     }
     .row {
@@ -178,7 +179,7 @@ body {
     }
     #centerbutton {
       text-align: center;
-    }
+    } 
     .logo {
       max-width: 150px;
     }

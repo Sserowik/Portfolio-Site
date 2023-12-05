@@ -1,131 +1,180 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Sejohn</title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/7ed9dff6f1.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7ed9dff6f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <div class="navtoggle" id="myNavtoggle">
-                <picture>
-                    <source srcset="img/full logo.svg" media="(max-width:767px)">
-                    <img src="img/full logo.svg" alt="Logo Appears Here" class="logo">
-                </picture>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Work</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-                    </ul>
-                </nav>
-            </div>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <picture>
+            <source srcset="img/fulllogo.svg" media="(max-width:767px)" />
+            <img src="img/fulllogo.svg" alt="Logo Appears Here" class="logo" />
+          </picture>
+          <nav>
+            <ul>
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
     <main>
-        <div title="main">
-            <div class="container">
-                <div>
-                    <div id="projects">
-                        <h2>About</h2>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <picture>
-                            <source media="(max-width:500px)" srcset="img/profilesvg.svg"> 
-                            <img src="img/profilesvg.svg" alt="profile image" class="projectcard">
-                        </picture>
-                    </div>
-                    <div class="col-lg-7">   
-                        <div id="projects">                     
-                            <h2>Who I Am</h2>
-                        </div>
-                            <p>"Hi, I'm Sejohn. I am a UI designer with experience in app design, both for web and for mobile, and a background in customer service. My previous jobs in the tech industry taught me how users interact with their various pieces of software and devices and how best to approach issues from a user's perspective while maintaining a business' best interests."
-                            </p>
-                            <p>With my creative background in the visual arts and my time working for tech companies both big and small, moving into the world of UI design has felt seamless. As a designer, my hope is to help improve a user's experience while working with a product and help shape the future of that product's development.
-                            </p>
-                            <div>
-                                <div id="centerbutton">
-                                    <a href="files/sejohn serowik resume.pdf" target="_blank" class="button">See My Resume</a>
-                                </div> 
-                            </div>
-                    </div>
-                    <div class="col-lg-5">
-                                <div>                           
-                                    <h2>Skills & Tools</h2>
-                                </div> 
-                                <div>
-                                    <div>
-                                        <div class="col-md-6">
-                                            <div>
-                                                <h3>My Skills</h3>
-                                            </div>
-                                            <div>
-                                                <ul><li>Wireframing
-                                                </li><li>Prototyping
-                                                </li><li>Usability Testing
-                                                </li><li>User Research
-                                                </li><li>Logo Design
-                                                </li><li>Typography
-                                                </li><li>Layout Design
-                                                </li><li>Collaboration</li></ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div>                 
-                                                <h3>Tools</h3>
-                                            </div>
-                                            <div>
-                                                <ul><li>Figma
-                                                </li><li>Adobe XD
-                                                </li><li>Adobe Photoshop
-                                                </li><li>GimP Photo Editor</li></ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>                                                     
-                    </div>  
-                </div>
+      <div title="main">
+        <div class="container">
+          <div>
+            <div class="projects">
+              <h2>About</h2>
             </div>
+          </div>
+          <div>
+            <div>
+              <picture>
+                <source media="(max-width:500px)" srcset="img/profilesvg.svg" />
+                <img
+                  src="img/profilesvg.svg"
+                  alt="profile image"
+                  class="projectcard"
+                />
+              </picture>
+            </div>
+            <div class="col-lg-7">
+              <div class="projects">
+                <h2>Who I Am</h2>
+              </div>
+              <p>
+                "Hi, I'm Sejohn. I am a UI designer with experience in app
+                design, both for web and for mobile, and a background in
+                customer service. My previous jobs in the tech industry taught
+                me how users interact with their various pieces of software and
+                devices and how best to approach issues from a user's
+                perspective while maintaining a business' best interests."
+              </p>
+              <p>
+                With my creative background in the visual arts and my time
+                working for tech companies both big and small, moving into the
+                world of UI design has felt seamless. As a designer, my hope is
+                to help improve a user's experience while working with a product
+                and help shape the future of that product's development.
+              </p>
+              <div>
+                <div id="centerbutton">
+                  <a
+                    href="files/sejohnserowikresume.pdf"
+                    target="_blank"
+                    class="button"
+                    >See My Resume</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div>
+                <h2>Skills and Tools</h2>
+              </div>
+              <div>
+                <div>
+                  <div class="col-md-6">
+                    <div>
+                      <h3>My Skills</h3>
+                    </div>
+                    <div>
+                      <ul>
+                        <li>Wireframing</li>
+                        <li>Prototyping</li>
+                        <li>Usability Testing</li>
+                        <li>User Research</li>
+                        <li>Logo Design</li>
+                        <li>Typography</li>
+                        <li>Layout Design</li>
+                        <li>Collaboration</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div>
+                      <h3>Tools</h3>
+                    </div>
+                    <div>
+                      <ul>
+                        <li>Figma</li>
+                        <li>Adobe XD</li>
+                        <li>Adobe Photoshop</li>
+                        <li>GimP Photo Editor</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </main>   
-<footer id="contact">
-    <div class="container">
+      </div>
+    </main>
+    <footer id="contact">
+      <div class="container">
         <!-- start footer content -->
         <h2>Contact Me</h2>
         <p>
-            If you like what you see, reach out to me:
-            <a href="tel:#">419.494.2976</a>
+          If you like what you see, reach out to me:
+          <a href="tel:#">419.494.2976</a>
         </p>
-    <div>
-        Or, if phones aren't your thing-
-        <a href="mailto:sejohnserowik@gmail.com" class="button contact">Drop me an Email</a>
-    </div>
-    <div class="webcons">
-        <!--Social Media Layout and Placeholders-->
-        <a href="https://www.linkedin.com/in/sejohn-serowik-56a2a928a/" target="_blank">
-            <i class="fa-brands fa-linkedin fa-2xl" style="color: #db3218;"></i>
-        </a>
-        <a href="https://sejohnserowikc29a.myportfolio.com/" target="_blank">
-            <i class="fa-solid fa-globe fa-2xl" style="color: #db3218;"></i>
-        </a>
-    </div>
-        <p>
-            Copyright Sejohn E Serowik 2023-2024
-        </p>
-<!-- end footer content -->
-</footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="crossorigin="anonymous"></script>
+        <div>
+          Or, if phones aren't your thing-
+          <a href="mailto:sejohnserowik@gmail.com" class="button contact"
+            >Drop me an Email</a
+          >
+        </div>
+        <div class="webcons">
+          <!--Social Media Layout and Placeholders-->
+          <a
+            href="https://www.linkedin.com/in/sejohn-serowik-56a2a928a/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin fa-2xl" style="color: #db3218"></i>
+          </a>
+          <a href="https://sejohnserowikc29a.myportfolio.com/" target="_blank">
+            <i class="fa-solid fa-globe fa-2xl" style="color: #db3218"></i>
+          </a>
+        </div>
+        <p>Copyright Sejohn E Serowik 2023-2024</p>
+      </div>
+      <!-- end footer content -->
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/scripts.js"></script>
-</body>
+  </body>
 </html>
